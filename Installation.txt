@@ -1,0 +1,42 @@
+Assignmet 1  :
+
+What is the output of the following code and explain why:
+
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+
+
+Answer : 21 ,21
+Explainetion :  
+$a = ‘1’; // output is 1.
+$b = &$a; // $b will be 1, because $b content the reference of $a.
+$b = “2$b”; //$b value will be 21 as 2 is concatenated to the value of $b. 
+echo $a.", ".$b; // output will be 21, 21
+
+$a and $b are completely equal here. $b is not pointing to $q or vice versa. $a and $b are pointing to the same place. 
+
+
+Assignmet 2  : 
+
+Copy & Past point-of-sale-scanner.zip file into your webserver's DOCUMENTROOT directory.
+
+Before run this project, you need to follow the below steps.
+
+1. After uncompress file point-of-sale-scanner.zip
+2. run the index.php under demo directory.
+3. You will be see a text field, here you can enter your scan code. then click on "calculate" button. You will the result below of the input field in same page.
+
+
+Assignmet 3  :
+
+I have create a Magento 2 extension to implement guest order history feature. Where customer can see order history by enter by order number. Download this module and install on a magento instance.
+After installed this, open the url http://<your_domain_name>/trackorder
+
+ 
+ 
+ 
+ 
+ 
+ 
